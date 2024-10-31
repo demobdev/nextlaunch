@@ -47,6 +47,8 @@ model User {
     subscriptionStatus String?
     teams             TeamMember[]
     teamActivities    TeamActivity[]
+    tokens            Int       @default(100)
+    totalUsage        Int       @default(0)
 }
 
 model VerificationToken {
